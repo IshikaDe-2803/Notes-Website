@@ -1,0 +1,138 @@
+    body {
+        background-color: rgb(22, 18, 18);
+    }
+    
+    @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+    * {
+        box-sizing: border-box;
+    }
+    
+    .notescontain {
+        margin-left: 2%;
+    }
+    
+    #stickyNote {
+        background-color: #F7E98D;
+        width: 300px;
+        height: 500px;
+        font: 20px 'Gloria Hallelujah', cursive;
+        line-height: 1.5;
+        border: 0;
+        border-radius: 3px;
+        background: linear-gradient(#F9EFAF, #F7E98D);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: box-shadow 0.5s ease;
+        max-width: 520px;
+        max-height: 250px;
+        padding: 10px 10px 10px 10px;
+        margin: 50px 0px 0px 50px;
+        float: left;
+    }
+    
+    #stickyNote:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    #stickyNote:focus {
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        outline: none;
+    }
+    
+    #title {
+        width: 275px;
+        height: 50px;
+        font-weight: bolder;
+        margin: 0px 0px 0px 0px;
+        text-decoration: none;
+        padding: 5px 5px 5px 5px;
+        float: left;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        overflow-wrap: break-word;
+    }
+    
+    #content {
+        /* text-overflow: ellipsis; */
+        color: black;
+        height: 180px;
+        width: 275px;
+        margin: 0px 0px 0px 0px;
+        padding: 5px 5px 5px 5px;
+        float: left;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        overflow-y: auto;
+        overflow-wrap: break-word;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: #f6e780;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: #f1db46;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #f7d703;
+    }
+    
+    .close {
+        color: red;
+        cursor: pointer;
+    }
+    
+    #seemore {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: large;
+        float: right;
+    }
+    
+    a {
+        color: rgb(13, 83, 83);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: rgb(33, 36, 36);
+        text-shadow: #0d0d0d;
+        text-decoration: none;
+    }
+    
+    .active {
+        color: #0d0d0d;
+        border-bottom: 2px solid #0c2938;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 5px 0px;
+        animation: normal;
+    }
+    /*Navbar css*/
+    
+    .navbar {
+        background-color: black;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: rgb(125, 186, 255);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgb(172, 209, 252);
+        text-decoration: underline;
+    }
